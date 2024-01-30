@@ -3,7 +3,7 @@ resource "aws_alb" "aws_alb_demo" {
   internal                   = false
   load_balancer_type         = "application"
   security_groups            = [aws_security_group.allow_http_https.id]
-  subnets                    = ["subnet-0b7fe7a548bced05f"]
+  subnets                    = ["subnet-0b7fe7a548bced05f", "subnet-069d2f8515d821e36"]
 }
 
 resource "aws_security_group" "allow_http_https" {

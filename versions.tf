@@ -8,7 +8,7 @@ terraform {
   }
   backend "s3" {
     bucket = "terraform-backend-qc"
-    key    = "terraform.tfstate"
+    key    = "terraform-alb.tfstate"
     region = "ca-central-1"
   }
 }
